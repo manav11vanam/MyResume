@@ -173,38 +173,25 @@
     </div>
     <div class="container mt-5" id="contact-form">
         <h2>Let's talk</h2>
-        <form id="contact" action="insert.php" method="POST">
+        <h6 class="mb-3">Please fill out the form and I will get in touch shortly :D</h6>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="bf122a61-fde1-46bf-b376-6494c6d72849">
             <div class="mb-3 d-sm-block d-md-flex">
-                <div class="col col-sm-12 col-md-1 text-md-center">
+                <div class="col col-sm-12 col-md-2 text-md-center">
                     <label for="name" class="form-label">Name:</label>
                 </div>
-                <div class="col col-sm-12 col-md-3">
+                <div class="col col-sm-12 col-md-4">
                     <input type="text" class="form-control" name="name" id="name" required>
                 </div>
-                <div class="col col-sm-12 col-md-1 text-md-center">
+                <div class="col col-sm-12 col-md-2 text-md-center">
                     <label for="email" class="form-label">Email:</label>
                 </div>
-                <div class="col col-sm-12 col-md-3">
+                <div class="col col-sm-12 col-md-4">
                     <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
                         required>
                 </div>
-                <div class="col col-sm-12 col-md-1 text-md-center">
-                    <label for="query" class="form-label">Query:</label>
-                </div>
-                <div class="col col-sm-12 col-md-3">
-                    <select class="form-select mb-3" id="query" name="query" aria-label="Default select example"
-                        required>
-                        <option value="Feedback" selected>Feedback</option>
-                        <option value="Complaint">Complaint</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </div>
             </div>
-            <div class="mb-3 ps-4">
-                <label for="floatingTextarea">Comments:</label>
-                <textarea class="form-control" placeholder="Leave a comment here" name="comment" id="floatingTextarea"
-                    required></textarea>
-            </div>
+            <input type="hidden" name="redirectTo" value="https://manav11vanam.github.io/MyResume/">
             <button type="submit" class="mt-5 d-flex mx-auto splbtn">Submit</button>
         </form>
     </div>

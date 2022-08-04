@@ -1,4 +1,25 @@
-const skills = ["Python", "HTML", "Bootstrap", "CSS", "JavaScript", "NodeJS", "MongoDB"];
+const skills = [
+  "Python",
+  "HTML",
+  "Bootstrap",
+  "CSS",
+  "JavaScript",
+  "NodeJS",
+  "ExpressJS",
+  "MongoDB",
+  "Mongoose",
+  "Git",
+  "Github",
+  "Web Scraping",
+  "SQL",
+  "SQLite",
+  "Selenium",
+  "FlexBox",
+  "PHP",
+  "REST",
+  "API",
+  "Terminal",
+];
 
 const skillsDiv = document.getElementById("skills");
 for (let skill of skills) {
@@ -10,13 +31,13 @@ for (let skill of skills) {
 
 const courses = [
   { title: "Git and Github", by: "Google", on: "Coursera" },
+  { title: "Complete Web Development Bootcamp, 2022", by: "Colt Steele", on: "Udemy" },
   { title: "Using Python to Interact with OS", by: "Google", on: "Coursera" },
   {
     title: "Python for Everybody Specialization (5 Courses)",
     by: "Py4e, Dr. Charles Severance",
     on: "Coursera",
   },
-  { title: "Complete Web Development Bootcamp, 2022", by: "Colt Steele", on: "Udemy" },
 ];
 
 const coursesDiv = document.getElementById("courses");
@@ -53,6 +74,12 @@ const projects = [
       "Jodi was created with the intention to revive blind dating since in today's superficial world we judge people on a lot of factors even before we really get to know them.",
     size: 2,
     link: "https://github.com/curry-dev/jodi",
+  },
+  {
+    title: "Scraper using Selenium",
+    description: "Python program to scrape certain automobile sites for data collection",
+    size: 1,
+    link: "https://github.com/manav11vanam/Selenium",
   },
   {
     title: "Command Line Hangman Game in Python",
