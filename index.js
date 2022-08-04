@@ -118,6 +118,49 @@ for (let project of projects) {
   projectsDiv.append(div);
 }
 
+{
+  /* <h5>Dataman - Haynes Pro</h5>
+<p>
+    <b>Role:</b> Python Programmer <br>
+    <b>Skills:</b> Python, Web Scraping, Selenium, Python, Web Scraping, Selenium <br>
+    <span class="text-muted">Duration: Jan 01, 2021 - June 01, 2021</span>
+</p> */
+}
+const professional = [
+  {
+    company: "Dataman - Haynes Pro",
+    role: "Python Programming",
+    skills: "Python, Web Scraping, Selenium, Selenium Web Driver, Appium",
+    duration: "Jan 01, 2021 - June 01, 2021",
+  },
+  {
+    company: "Salahkaar Consultants",
+    role: "PHP Fullstack Intern",
+    skills:
+      "HTML, CSS, Bootstrap, Flexbox, Javascript, Jquery, AJAX, PHP, PHPMyadmin, API, MySQL, MySQLi, SEO, Google Analytics, SSL Certificate Installation, Google for Jobs",
+    duration: "Jan 01, 2021 - June 01, 2021",
+  },
+];
+let professionalDiv = document.getElementById("professional");
+for (let prof of professional) {
+  let div = document.createElement("div");
+  div.setAttribute("data-aos", "fade-up");
+  let h5 = document.createElement("h5");
+  h5.textContent = prof.company;
+  let p = document.createElement("p");
+  // p.classList.add("mb-1");
+  p.innerHTML = `
+  <b>Role:</b> ${prof.role} <br>
+  <b>Skills:</b> ${prof.skills} <br>
+  <span class="text-muted">Duration: ${prof.duration}</span>
+  `;
+  div.append(h5);
+  div.append(p);
+  let br = document.createElement("br");
+  professionalDiv.append(div);
+  professionalDiv.append(br);
+}
+
 // var options = {
 //   //   strings: ["", "Hi, I am Manav, an aspiring Web Developer and Python Enthusiast"],
 //   typeSpeed: 40,
