@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.navbar-brand img {
+  filter: invert(1);
+  margin-left: 1rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+#header {
+  font-family: "Architects Daughter", cursive;
+  height: 80vh;
+}
+
+#header h2 {
+  font-size: 2.5em;
+}
+
+#header-email {
+  font-size: 1.25em;
+}
+
+#header-img {
+  height: 80vh;
+  background: url("img/me-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.aos-init:not(.aos-animate):after {
+  position: fixed;
+}
+
+/* From cssbuttons.io */
+:root {
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgba(191, 123, 255, 0.781);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(100, 61, 136);
+}
+.splbtn {
+  border: 0.25em solid var(--glow-color);
+  padding: 1em 3em;
+  color: var(--glow-color);
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--btn-color);
+  border-radius: 1em;
+  outline: none;
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.splbtn::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--glow-spread-color);
+  filter: blur(2em);
+  opacity: 0.7;
+  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+.splbtn:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+.splbtn:active {
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+#links a {
+  font-size: 1.25em;
+}
+
+#contact-form {
+  border: 3px solid rgb(217, 176, 255);
+  border-radius: 45px;
+  padding: 25px;
+}
+
+#about-me {
+  font-size: 1.4em;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #1f1f1f;
+}
+
+#experience {
+  padding-top: 5rem;
+}
+
+#experience a {
+  text-decoration: none;
+  font-size: 27px;
+  color: rgb(231, 206, 255);
+  font-weight: 500;
+}
+
+#experience h4 {
+  font-size: 1.6em;
+  color: rgb(255, 150, 255);
+}
+
+#about-me h4 {
+  font-size: 1.6em;
+  color: rgb(217, 176, 255);
+}
+
+#experience h5 {
+  font-size: 1.4em;
+  color: rgb(217, 176, 255);
+}
+
+#experience h2 {
+  margin-top: 50px;
+}
+
+#quote {
+  font-family: cursive;
+  background-color: #ffa6d5;
+  padding: 3em;
+  color: #8e0505;
+}
+
+#quote blockquote {
+  font-size: 30px;
+}
+
+.skills {
+  display: inline-block;
+  border: 2px solid rgb(217, 176, 255);
+  margin: 0.25em;
+  padding: 0.5em 2em;
+  border-radius: 1.5em;
+  transition: all 0.3s;
+}
+
+.skills:hover {
+  background-color: var(--btn-color);
+  background-color: var(--glow-color);
+  color: black;
+  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color),
+    inset 0 0 0.75em 0.25em var(--glow-color);
+  text-shadow: 0 0 0.5em var(--glow-color);
+}
+
+footer {
+  height: 10rem;
+  background-color: rgb(255, 150, 255);
+  margin-top: 2rem;
+}
