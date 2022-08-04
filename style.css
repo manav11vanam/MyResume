@@ -167,8 +167,8 @@ body {
   background-color: var(--btn-color);
   background-color: var(--glow-color);
   color: black;
-  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color),
-    inset 0 0 0.75em 0.25em var(--glow-color);
+  box-shadow: 0 0 0.5em 0.25em var(--glow-color), 0 0 2em 0.5em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
   text-shadow: 0 0 0.5em var(--glow-color);
 }
 
@@ -193,6 +193,5 @@ footer {
     margin: 0.25em;
     padding: 0.5em 1em;
     border-radius: 1.25em;
-    /* font-size: 0.75rem; */
   }
 }
