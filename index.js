@@ -19,6 +19,8 @@ const skills = [
   "REST",
   "API",
   "Terminal",
+  "C",
+  "C++",
 ];
 
 const skillsDiv = document.getElementById("skills");
@@ -171,6 +173,11 @@ for (let prof of professional) {
 var typed = new Typed("#typed", {
   stringsElement: "#typed-strings",
   typeSpeed: 25,
+});
+
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
 });
 
 // "https://docs.google.com/forms/d/e/1FAIpQLSdrfmzlaqV8tyBHko-J21-mrWoNRHiypSxkEBEVB5ABmeVmFw/viewform?usp=pp_url&entry.2005620554=Manav&entry.1045781291=manav@gmail.com&entry.1065046570=Feedback&entry.839337160=Hello+World"

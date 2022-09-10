@@ -19,6 +19,13 @@ body {
   height: 2.5rem;
   width: 2.5rem;
 }
+
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 1s;
+}
+
 #header {
   font-family: "Architects Daughter", cursive;
   height: 80vh;
